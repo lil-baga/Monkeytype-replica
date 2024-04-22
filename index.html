@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
     <script>
         tailwind.config = {
             theme: {
@@ -28,7 +29,7 @@
     <div>
         <nav class="w-full">
             <div class="flex flex-row items-center justify-center mt-6 gap-[700px]">
-                <div class="flex flex-row gap-7 -ml-7">
+                <div class="flex flex-row relative top-0 gap-7 -ml-7">
                     <div class="flex flex-row items-center justify-center">
                         <a id="logo" href="/Monkeytype-replica/">
                             <div class="monkeytype-icon mt-1.5">
@@ -107,7 +108,9 @@
                     <button class="fill-[#646669] hover:fill-[#D1D0C5] transition-all">
                         <div class="profile-icon mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M10 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 0a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m-9 8c0-.204.22-.809 1.32-1.459C4.838 10.44 6.32 10 8 10c1.68 0 3.162.44 4.18 1.041c1.1.65 1.32 1.255 1.32 1.459a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1m5.5-4c-3.85 0-7 2-7 4A2.5 2.5 0 0 0 3.5 15h9a2.5 2.5 0 0 0 2.5-2.5c0-2-3.15-4-7-4" clip-rule="evenodd"/>
+                                <path fill-rule="evenodd"
+                                    d="M10 4.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.5 0a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0m-9 8c0-.204.22-.809 1.32-1.459C4.838 10.44 6.32 10 8 10c1.68 0 3.162.44 4.18 1.041c1.1.65 1.32 1.255 1.32 1.459a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1m5.5-4c-3.85 0-7 2-7 4A2.5 2.5 0 0 0 3.5 15h9a2.5 2.5 0 0 0 2.5-2.5c0-2-3.15-4-7-4"
+                                    clip-rule="evenodd" />
                             </svg>
                         </div>
                     </button>
@@ -115,37 +118,108 @@
             </div>
         </nav>
     </div>
-    <div class="h-full w-full">
-
+    <div class="flex flex-col h-full w-full items-center justify-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYx2cgHlUmO1YPFaJBiBwK7S6u5bqa51yIK8pdJ-hsw&s"
+            alt="">
     </div>
     <div>
-        <footer class="w-full">
-            <div>
-                <div id="upper-footer-1">
+        <footer class="w-full ">
+            <div class="flex flex-col font-lexend font-normal text-xs text-[#646669] items-center justify-center gap-3 relative -ml-8">
+                <div class="flex flex-col items-center justify-between mb-20 gap-3 bottom-0 fixed">
+                    <div id="upper-footer-1" class="flex flex-row gap-2">
+                        <p class="bg-[#646669] text-[#323437] px-1 rounded-sm">tab</p>
+                        <p>- restart test</p>
+                    </div>
+                    <div id="upper-footer-2" class="flex flex-row gap-2">
+                        <p class="bg-[#646669] text-[#323437] px-1 rounded-sm">esc</p>
+                        <p>or</p>
+                        <p class="bg-[#646669] text-[#323437] px-1 rounded-sm">ctrl</p>
+                        <p>+</p>
+                        <p class="bg-[#646669] text-[#323437] px-1 rounded-sm">shift</p>
+                        <p>+</p>
+                        <p class="bg-[#646669] text-[#323437] px-1 rounded-sm">p</p>
+                        <p>- command line</p>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-between mb-8 gap-[460px] bottom-0 fixed">
+                    <div id="footer-left"
+                        class="flex flex-row font-lexend font-medium text-xs items-center justify-center gap-3 -ml-8">
+                        <button id="contact-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 32 32">
+                                <path
+                                    d="M28.516 7.167H3.482L16 14.275l12.516-7.108zM16.74 17.303a1.494 1.494 0 0 1-1.48 0L2.5 10.06v14.773h27V10.06l-12.76 7.243z" />
+                            </svg>contact
+                        </button>
+                        <button id="support-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.005 2.003a8 8 0 0 1 3.292 15.293A8 8 0 1 1 6.711 6.71a8.003 8.003 0 0 1 7.294-4.707Zm-4 6a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm1 1v1h2v2h-4a.5.5 0 0 0-.09.992l.09.008h2a2.5 2.5 0 0 1 0 5v1h-2v-1h-2v-2h4a.5.5 0 0 0 .09-.992l-.09-.008h-2a2.5 2.5 0 0 1 0-5v-1h2Zm3-5A5.985 5.985 0 0 0 9.52 6.016a8 8 0 0 1 8.47 8.471a6 6 0 0 0-3.986-10.484Z" />
+                            </svg>support
+                        </button>
+                        <button id="github-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="m.586 12l4.95-4.95L6.95 8.464L3.414 12l3.536 3.536l-1.414 1.414L.586 12Zm8.201 8.728l4.486-17.94l1.94.485l-4.485 17.94l-1.94-.485Zm8.263-5.192L20.586 12L17.05 8.464l1.415-1.414l4.95 4.95l-4.95 4.95l-1.415-1.414Z" />
+                            </svg>github
+                        </button>
+                        <button id="discord-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 32 32">
+                                <path
+                                    d="M26.964 0c1.875 0 3.385 1.516 3.474 3.302V32l-3.568-3.031l-1.958-1.781l-2.141-1.865l.891 2.938H4.948c-1.87 0-3.385-1.417-3.385-3.302V3.308c0-1.786 1.516-3.302 3.391-3.302h22zm-8.157 7.578h-.042l-.271.266c2.766.802 4.104 2.052 4.104 2.052c-1.781-.891-3.391-1.339-4.995-1.521c-1.156-.177-2.318-.083-3.297 0h-.271c-.625 0-1.958.271-3.745.984c-.62.271-.979.448-.979.448s1.333-1.339 4.281-2.052l-.182-.177s-2.229-.089-4.635 1.693c0 0-2.406 4.193-2.406 9.359c0 0 1.333 2.318 4.99 2.406c0 0 .536-.708 1.073-1.333c-2.052-.625-2.854-1.875-2.854-1.875s.182.089.448.266h.078c.042 0 .063.021.083.042v.01c.021.021.042.036.078.036c.443.182.88.359 1.24.536c.625.266 1.422.536 2.401.714c1.24.182 2.661.266 4.281 0c.797-.182 1.599-.354 2.401-.714c.516-.266 1.156-.531 1.859-.984c0 0-.797 1.25-2.938 1.875c.438.62 1.057 1.333 1.057 1.333c3.661-.083 5.083-2.401 5.161-2.302c0-5.161-2.422-9.359-2.422-9.359c-2.177-1.62-4.219-1.682-4.578-1.682l.073-.026zm.224 5.886c.938 0 1.693.797 1.693 1.776c0 .99-.76 1.786-1.693 1.786c-.938 0-1.693-.797-1.693-1.776c0-.99.76-1.786 1.693-1.786zm-6.057 0c.932 0 1.688.797 1.688 1.776c0 .99-.76 1.786-1.693 1.786c-.938 0-1.698-.797-1.698-1.776c0-.99.76-1.786 1.698-1.786z" />
+                            </svg>discord
+                        </button>
+                        <button id="twitter-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 3c-.6.3-1.2.4-1.9.5c.7-.4 1.2-1 1.4-1.8c-.6.4-1.3.6-2.1.8c-.6-.6-1.5-1-2.4-1c-1.7 0-3.2 1.5-3.2 3.3c0 .3 0 .5.1.7c-2.7-.1-5.2-1.4-6.8-3.4c-.3.5-.4 1-.4 1.7c0 1.1.6 2.1 1.5 2.7c-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1c-.2 0-.4 0-.6-.1c.4 1.3 1.6 2.3 3.1 2.3c-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5c6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" />
+                            </svg>twitter
+                        </button>
+                        <button id="terms-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 32 32">
+                                <path
+                                    d="M6 3v26h20V9.594l-.28-.313l-6-6l-.314-.28H6zm2 2h10v6h6v16H8V5zm12 1.438L22.563 9H20V6.437zM11 13v2h10v-2H11zm0 4v2h10v-2H11zm0 4v2h10v-2H11z" />
+                            </svg>terms
+                        </button>
+                        <button id="security-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 56 56">
+                                <path
+                                    d="M27.988 51.672c.375 0 .985-.14 1.594-.469c13.313-7.476 17.906-10.64 17.906-19.195v-17.93c0-2.46-1.078-3.234-3.047-4.078c-2.765-1.148-11.718-4.36-14.484-5.32c-.633-.211-1.289-.352-1.969-.352c-.656 0-1.312.188-1.945.352c-2.766.843-11.719 4.195-14.484 5.32c-1.97.82-3.047 1.617-3.047 4.078v17.93c0 8.554 4.617 11.695 17.906 19.195c.61.328 1.195.469 1.57.469m0-4.266V8.078c.282 0 .563.07.938.211c3.61 1.29 10.406 3.89 14.039 5.133c.633.234.797.562.797 1.36V31.14c0 7.218-3.492 9.117-14.297 15.703c-.703.422-1.102.562-1.477.562" />
+                            </svg>security
+                        </button>
+                        <button id="privacy-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="M17 9V7c0-2.8-2.2-5-5-5S7 4.2 7 7v2c-1.7 0-3 1.3-3 3v7c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3v-7c0-1.7-1.3-3-3-3zM9 7c0-1.7 1.3-3 3-3s3 1.3 3 3v2H9V7z" />
+                            </svg>privacy
+                        </button>
+                    </div>
+                    <div id="footer-right"
+                        class="flex flex-row font-lexend font-medium text-xs items-center justify-center gap-3">
+                        <button id="theme-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="M11.962 21q-1.839 0-3.472-.71q-1.632-.711-2.85-1.93q-1.219-1.218-1.93-2.86Q3 13.858 3 12q0-1.883.726-3.525t1.979-2.858q1.253-1.215 2.94-1.916Q10.33 3 12.237 3q1.75 0 3.333.591q1.583.592 2.786 1.64q1.203 1.05 1.923 2.5q.72 1.452.72 3.165q0 2.317-1.337 3.71Q18.327 16 16 16h-1.773q-.629 0-1.053.433q-.424.432-.424 1.044q0 .627.375 1.064q.375.438.375 1.009q0 .73-.409 1.09q-.408.36-1.13.36ZM6.5 12.5q.42 0 .71-.29t.29-.71q0-.42-.29-.71t-.71-.29q-.42 0-.71.29t-.29.71q0 .42.29.71t.71.29Zm3-4q.42 0 .71-.29t.29-.71q0-.42-.29-.71T9.5 6.5q-.42 0-.71.29t-.29.71q0 .42.29.71t.71.29Zm5 0q.42 0 .71-.29t.29-.71q0-.42-.29-.71t-.71-.29q-.42 0-.71.29t-.29.71q0 .42.29.71t.71.29Zm3 4q.42 0 .71-.29t.29-.71q0-.42-.29-.71t-.71-.29q-.42 0-.71.29t-.29.71q0 .42.29.71t.71.29Z" />
+                            </svg>serika_dark
+                        </button>
+                        <button id="version-icon"
+                            class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all flex flex-row items-center justify-center text-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.105 15.21A3.001 3.001 0 1 1 5 15.17V8.83a3.001 3.001 0 1 1 2 0V12c.836-.628 1.874-1 3-1h4a3.001 3.001 0 0 0 2.895-2.21a3.001 3.001 0 1 1 2.032.064A5.002 5.002 0 0 1 14 13h-4a3.001 3.001 0 0 0-2.895 2.21Z" />
+                            </svg>v24.15.1
+                        </button>
+                    </div>
+                </div>
 
-                </div>
-                <div id="upper-footer-2">
-
-                </div>
-            </div>
-            <div class="flex flex-row items-center justify-center mb-5">
-                <div id="footer-left" class="flex flex-row font-lexend text-[10px] items-center justify-center gap-3">
-                    <button id="contact-icon" class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] flex flex-row items-center justify-center text-center gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 14 14">
-                            <path fill-rule="evenodd" d="M0 2.75a1.5 1.5 0 0 1 1.5-1.5h11a1.5 1.5 0 0 1 1.5 1.5v.342L7.383 7.504A.72.72 0 0 1 7 7.607a.72.72 0 0 1-.383-.103L0 3.092zm0 1.844v6.656a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V4.594L8.073 8.546l-.005.004A1.966 1.966 0 0 1 7 8.857c-.375 0-.753-.102-1.068-.307l-.005-.004z" clip-rule="evenodd"/>
-                        </svg>contacts
-                    </button>
-                    <button id="support-icon" class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] flex flex-row items-center justify-center text-center gap-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 14 14">
-                            <path fill-rule="evenodd" d="M0 2.75a1.5 1.5 0 0 1 1.5-1.5h11a1.5 1.5 0 0 1 1.5 1.5v.342L7.383 7.504A.72.72 0 0 1 7 7.607a.72.72 0 0 1-.383-.103L0 3.092zm0 1.844v6.656a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V4.594L8.073 8.546l-.005.004A1.966 1.966 0 0 1 7 8.857c-.375 0-.753-.102-1.068-.307l-.005-.004z" clip-rule="evenodd"/>
-                        </svg>support
-                    </button>
-                </div>
-                <div id="footer-right">
-                    <button class="fill-[#646669] hover:fill-[#D1D0C5] text-[#646669] hover:text-[#D1D0C5] transition-all">
-
-                    </button>
-                </div>
             </div>
         </footer>
     </div>
